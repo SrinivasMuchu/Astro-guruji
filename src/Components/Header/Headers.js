@@ -13,7 +13,7 @@ const images = [
   purpletheme
 ]
 function Headers() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(images[0]);
  
 
 
