@@ -8,40 +8,13 @@ import razopay from '../../assets/razopay.svg'
 import paytm from '../../assets/paytm.svg'
 import stripe from '../../assets/stripe.svg'
 import './Footer.css'
-import Skeleton from "@mui/material/Skeleton";
-import Card from "@mui/material/Card";
-import Button from "@mui/material/Button";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 
-const LoadingSkeleton = () => {
-  return (
-    <Card>
-      <CardContent>
-        <Skeleton height={30} />
-        <Skeleton height={100}></Skeleton>
-      </CardContent>
-    </Card>
-  );
-};
 
 function Footer() {
-  const [loading, setLoading] = useState(true);
-  if (loading) {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }
-
-  if (loading) {
-    return <LoadingSkeleton />;
-  }
+  
 
   return (
-    <>
-    <Card>
-      <CardContent>
-        <Typography>
+
         <div className='footer-container'>
       <div className='column1'>
         <div className='footer-title'>
@@ -118,12 +91,7 @@ function Footer() {
       </div>
 
     </div>
-        </Typography>
-      </CardContent>
-    </Card>
-  
-    
-    </>
+
   )
 }
 

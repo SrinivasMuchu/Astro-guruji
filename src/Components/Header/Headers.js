@@ -6,22 +6,7 @@ import profilelogos from '../../assets/Ellipse 11.png'
 import MenuIcon from '@mui/icons-material/Menu';
 import orangetheme from '../../assets/background.svg'
 import purpletheme from '../../assets/purplebackground.svg'
-import Skeleton from "@mui/material/Skeleton";
-import Card from "@mui/material/Card";
-import Button from "@mui/material/Button";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 
-const LoadingSkeleton = () => {
-  return (
-    <Card>
-      <CardContent>
-        <Skeleton animation='wave' variant='circle'/>
-        <Skeleton height={400}></Skeleton>
-      </CardContent>
-    </Card>
-  );
-};
 
 const images = [
   orangetheme,
@@ -29,17 +14,17 @@ const images = [
 ]
 function Headers() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [loading, setLoading] = useState(true);
+ 
 
 
   useEffect(() => {
-    const interval = setInterval(() => {
+    setTimeout(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 3000);
+    }, 10000);
 
-    return () => clearInterval(interval);
+    // return () => clearInterval(interval);
   }, []);
 
   const backgroundImageStyle = {
@@ -48,28 +33,17 @@ function Headers() {
     backgroundPosition: "center",
     width: "100%",
   };
-  if (loading) {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }
-
-  if (loading) {
-    return <LoadingSkeleton />;
-  }
+  
   return (
-    <>
-    <Card>
-      <CardContent>
-        <Typography>
+  
      
     
     <div className='header-container' style={backgroundImageStyle} >
       <div className='topbar' >
         <div className='menu'><MenuIcon /></div>
-<Typography variant='rectangle'>
+
         <img alt='logs' src={logos} className='logo1' />
-        </Typography>
+    
         
         <div className='navs'>
           <p>Home</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -92,10 +66,7 @@ function Headers() {
         <Sliding />
       </div>
       </div>
-      </Typography>
-      </CardContent>
-      </Card>
-      </>
+ 
 
 
     

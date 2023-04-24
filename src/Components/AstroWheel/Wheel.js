@@ -5,35 +5,11 @@ import ZodiacCrds1 from './ZodiacCrds1'
 import ZodiacCards2 from './ZodiacCards2'
 import star from '../../assets/starts.svg'
 import styled, { keyframes } from 'styled-components';
-import Skeleton from "@mui/material/Skeleton";
-import Card from "@mui/material/Card";
-import Button from "@mui/material/Button";
-import CardContent from "@mui/material/CardContent";
-import Typography from "@mui/material/Typography";
 
-const LoadingSkeleton = () => {
-  return (
-    <Card>
-      <CardContent>
-        <Skeleton height={30} />
-        <Skeleton height={100}></Skeleton>
-      </CardContent>
-    </Card>
-  );
-};
 
 
 function Wheel() {
-  const [loading, setLoading] = useState(true);
-  if (loading) {
-    setTimeout(() => {
-      setLoading(false);
-    }, 3000);
-  }
 
-  if (loading) {
-    return <LoadingSkeleton />;
-  }
 
   const rotate = keyframes`
   from {
@@ -49,10 +25,7 @@ function Wheel() {
 
 
   return (
-    <>
-<Card>
-      <CardContent>
-        <Typography>
+   
     <div className="wheel-container" style={{ marginTop: "35px", marginBottom: "35px" }}>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <img src={star} alt='star' />
@@ -81,10 +54,7 @@ function Wheel() {
       </div>
 
     </div>
-    </Typography>
-    </CardContent>
-    </Card>
-    </>
+
   )
 }
 
