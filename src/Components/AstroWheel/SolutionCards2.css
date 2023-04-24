@@ -1,0 +1,22 @@
+.solutionCard-container-2 {
+  width: 200px;
+  height: 50px;
+  display: flex;
+  border: 1px solid #A95210;
+  box-sizing: border-box;
+  border-radius: 8.3px;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.solutionCard-title-2 {
+  font-weight: 500;
+}
+
+.images img {
+  margin-right: 10px;
+}
+
+.solutionCard-title-1 {
+  font-weight: 500;
+}

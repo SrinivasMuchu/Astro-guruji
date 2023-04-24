@@ -1,0 +1,55 @@
+.main-div {
+  background: #FFEFE3;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 25px;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  font-family: 'Sansation';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #D97122;
+}
+
+.column-flex {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  gap: 25px;
+  grid-template-columns: auto auto auto;
+  padding: 5px;
+}
+
+.column-flex img {
+  width: 346px;
+  height: 461px;
+}
+
+
+@media screen and (max-width: 1300px) {
+  .column-flex {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: auto auto;
+    border-radius: 8px;
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .column-flex {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(100% - 2rem);
+  }
+
+}

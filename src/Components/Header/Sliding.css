@@ -1,0 +1,10 @@
+/* style={{display:"flex",justifyContent:"space-around",color:"white"}} */
+.supportcardsheader {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    width: 90%;
+    margin: auto;
+}
+
+@media screen and (max-width: 350px) {}

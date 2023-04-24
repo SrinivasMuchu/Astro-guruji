@@ -1,0 +1,127 @@
+.bodycontainer1 {
+    font-family: poppins;
+    border-radius: 8px;
+}
+
+.top {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-around;
+}
+
+.top p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.top img {
+    width: 35%;
+    height: 18px;
+}
+
+.middle-con {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-cont {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 10px;
+    width: 50%;
+}
+
+.left-cont h4 {
+    font-weight: 600;
+    font-size: 22.2429px;
+    color: #FFFFFF;
+}
+
+.left-cont h5 {
+    color: #FFDBC0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1px;
+}
+
+.left-cont p {
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.right-cont {
+    justify-content: end;
+    text-align: center;
+    padding-right: 10px;
+    color: #5CE449;
+    margin-top: 70%;
+    width: 50%;
+}
+
+.right-cont h2 {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.right-cont span {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.bottom-con {
+    display: flex;
+    position: relative;
+    align-items: end;
+    padding-right: 4px;
+}
+
+.chat-btn {
+    width: 172.5px;
+    height: 50px;
+    background: #A95210;
+    border-radius: 0 0 0 20px;
+}
+
+.live-btn {
+    border-radius: 50%;
+    width: 66px;
+    height: 66px;
+    background: #A95210;
+    position: absolute;
+    top: -53%;
+    left: 40%;
+
+}
+
+.live-img {
+    width: 10px;
+    height: 5px;
+}
+
+.call-btn {
+    width: 172.5px;
+    height: 50px;
+    background: #A95210;
+    border-radius: 0 0 20px 0;
+}
+
+.call-btn:hover {
+    cursor: pointer;
+    background: #833800;
+}
+
+.chat-btn:hover {
+    cursor: pointer;
+    background: #833800;
+
+}
+
+.live-btn:hover {
+    cursor: pointer;
+    background: #833800;
+}
+
+@media screen and (max-width: 850px) {}

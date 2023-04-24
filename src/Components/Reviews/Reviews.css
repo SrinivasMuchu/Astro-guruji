@@ -1,0 +1,104 @@
+ .review-cont {
+    width: 90%;
+    margin: auto;
+
+
+ }
+
+ .gallery {
+    background: #F2D2BA;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 25px;
+ }
+
+ .end {
+    width: 90%;
+
+
+ }
+
+ .titlecard {
+    display: flex;
+    justify-content: center;
+    font-family: 'Sansation';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #D97122;
+ }
+
+ .matter {
+    position: relative;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #FFF5EE;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    width: 75%;
+    margin: auto;
+    padding-bottom: 25px;
+ }
+
+ .matter p {
+    width: 80%;
+    margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    color: #5B2800;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+ }
+
+ .matter img {
+    width: 25%;
+    margin: auto;
+ }
+
+ .name {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 128%;
+
+
+    letter-spacing: 0.085em;
+
+    color: #AC5A1D;
+ }
+
+ .btnsofnavs {
+    display: flex;
+    justify-content: space-between;
+ }
+
+ .btnsofnavs button {
+    width: 44px;
+    height: 90px;
+    background: #D97122;
+    margin: auto;
+    color: black;
+    font-weight: 900;
+
+
+ }
+
+ .nxt {
+    position: absolute;
+    right: -3%;
+    top: 40%;
+
+ }
+
+ .pre {
+    position: absolute;
+    left: -3%;
+    top: 40%;
+ }
