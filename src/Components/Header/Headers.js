@@ -18,13 +18,13 @@ function Headers() {
 
 
   useEffect(() => {
-    setTimeout(() => {
+    const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
         prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, 10000);
+    }, 3000);
 
-    // return () => clearInterval(interval);
+    return () => clearInterval(interval);
   }, []);
 
   const backgroundImageStyle = {
